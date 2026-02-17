@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>ADMIN PANEL</h2>
+
+<input type="password" id="pass" placeholder="Password admin">
+<button onclick="login()">Accedi</button>
+
+<div id="panel" style="display:none">
+
+<h3>Manutenzione</h3>
+<button onclick="toggle()">ON / OFF</button>
+
+<h3>Utenti registrati</h3>
+<pre id="users"></pre>
+
+</div>
+
+<script>
+
+async function login() {
+  const password = document.getElementById("pass").value;
+
+  const res = await fetch("/admin-login", {
+    method:"POST",
+    headers:{ "Content-Type":"application/json"},
+    body: JSON.stringify({ password })
+  });
+
+  const data = await res.json();
+
+  if(data.success){
+    document.getElementById("panel").style.display="block";
+    loadUsers();
+  } else {
+    alert("Password errata");
+  }
+}
+
+async function toggle(){
+  await fetch("/admin-toggle",{method:"POST"});
+  alert("Modalità cambiata");
+}
+
+async function loadUsers(){
+  const res = await fetch("/admin-users");
+  const users = await res.json();
+  document.getElementById("users").textContent =
+    JSON.stringify(users,null,2);
+}
+
+</script>
+
+</body>
+</html>

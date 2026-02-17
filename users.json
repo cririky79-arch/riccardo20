@@ -2,5 +2,23 @@
   {
     "username": "s",
     "password": "$2b$10$HR6hKt3L07r92NbxItvSxuGfu2rm9jtrm1M9PsloqhR.3oqu/FJr6"
+  },
+  {
+    "username": "",
+    "password": "$2b$10$fS8Y7/4JCwHqz5Tuo4hY5OsGFfmXdn.YaIUrp5qq3WCfJfFiDwr3u",
+    "created": "2026-02-17T17:45:17.051Z"
+  },
+  {
+    "username": "a",
+    "password": "$2b$10$CSupWMbiLeiwOdXyxyPClOcHH8.SN/2LDXKoP8uibS8XADTwlFgra",
+    "created": "2026-02-17T17:45:20.543Z"
+  },
+  {
+    "username": "io",
+    "password": "$2b$10$YSE1N00XbKhum4wDW9yDHeVwheoTemEXFD7paLvHHBGOrQYHagE/q"
+  },
+  {
+    "username": "ciao",
+    "password": "$2b$10$qs1fN4/H37k3gTdAmMQTeemRWilvoOLBGlOn/W7lna1J5pwHyY0me"
   }
 ]
