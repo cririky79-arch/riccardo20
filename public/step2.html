@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Verifica</title>
+
+<style>
+body{
+  font-family: Arial;
+  background:#f1f3f4;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+.box{
+  background:white;
+  padding:40px;
+  border-radius:10px;
+  text-align:center;
+  box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+input{
+  padding:10px;
+  width:250px;
+  margin-top:10px;
+}
+
+button{
+  margin-top:15px;
+  padding:10px 20px;
+  background:#1a73e8;
+  color:white;
+  border:none;
+  cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+  <h2>Inserisci password di accesso</h2>
+  <input id="fakepass" type="password" placeholder="Password">
+  <br>
+  <button onclick="go()">Continua</button>
+</div>
+
+<script>
+function go(){
+  // NON controlla nulla
+  window.location.href = "/foto.html";
+}
+</script>
+
+</body>
+</html>
